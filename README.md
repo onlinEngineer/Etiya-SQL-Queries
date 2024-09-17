@@ -4,7 +4,7 @@
 ### Tedarikçi ID'si 1 ile 5 arasındaki ürünler:
 SELECT * FROM Products WHERE SupplierID IN (1, 2, 3, 4, 5);
 
-###  Tedarikçi ID'si 1, 2, 3, 4 veya 5 olan ürünleri listeleyin.
+###  Tedarikçi ID'si 1, 2, 4 veya 5 olan ürünler:
 SELECT * from Suppliers where Suppliers.SupplierID in (1,2,4) OR Suppliers.SupplierID in (5)
 
 ### Ürün adı 'Chang' veya 'Aniseed Syrup' olan ürünler:
