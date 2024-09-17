@@ -1,8 +1,11 @@
 # Etiya-SQL-Queries
 
-##Tedarikçi ID'si 1 ile 5 arasındaki ürünler:
+# Etiya-SQL-Queries
 
-SELECT * from Suppliers where Suppliers.SupplierID in (1,2,3,4,5)
+### Tedarikçi ID'si 1 ile 5 arasındaki ürünler:
+```sql
+SELECT * FROM Products WHERE SupplierID IN (1, 2, 3, 4, 5);
+
 
 ##Tedarikçi ID'si 1, 2, 3, 4 veya 5 olan ürünleri listeleyin.
 
