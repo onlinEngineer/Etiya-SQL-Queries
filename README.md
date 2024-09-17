@@ -7,9 +7,6 @@ SELECT * FROM Products WHERE SupplierID IN (1, 2, 3, 4, 5);
 ###  Tedarikçi ID'si 1, 2, 3, 4 veya 5 olan ürünleri listeleyin.
 SELECT * from Suppliers where Suppliers.SupplierID in (1,2,4) OR Suppliers.SupplierID in (5)
 
-### Tedarikçi ID'si 1, 2, 4 veya 5 olan ürünler:
-SELECT * from Products WHERE Products.ProductName=='Chang' or Products.ProductName=='Aniseed Syrup'
-
 ### Ürün adı 'Chang' veya 'Aniseed Syrup' olan ürünler:
 SELECT * from Products WHERE Products.ProductName=='Chang' or Products.ProductName=='Aniseed Syrup'
 
