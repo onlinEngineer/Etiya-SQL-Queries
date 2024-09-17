@@ -1,7 +1,7 @@
 # Etiya-SQL-Queries
 
 
-
+```sql
 ### Tedarikçi ID'si 1 ile 5 arasındaki ürünler:
 SELECT * FROM Products WHERE SupplierID IN (1, 2, 3, 4, 5);
 
