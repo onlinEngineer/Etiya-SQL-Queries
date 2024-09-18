@@ -93,6 +93,7 @@ FROM Customers;
 
 SELECT ProductID, ProductName, ROUND(UnitPrice, 2) AS RoundedPrice
 FROM Products;
+
 "Orders" tablosundaki tüm siparişlerin toplam sayısını bulun:
 
 SELECT COUNT(*) AS TotalOrders
