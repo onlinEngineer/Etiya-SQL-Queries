@@ -1,3 +1,4 @@
+```sql
 Her kategorideki (CategoryID) ürün sayısını gösteren bir sorgu:
 
 SELECT CategoryID, COUNT(*) AS ProductCount
