@@ -23,7 +23,7 @@ SELECT p.ProductName, c.CategoryName
 FROM Products p
 CROSS JOIN Categories c;
 
--- 6. Verilen Orders, Customers, Employees tablolarını kullanarak bu tabloları birleştirin ve 1998 yılında verilen siparişleri listeleyin. Müşteri adı, sipariş ID'si, sipariş tarihi ve ilgili çalışan adı gösterilsin.
+-- 6. Verilen Orders, Customers, Employees tablolarını kullanarak bu tabloları birleştirin ve 2015 yılında verilen siparişleri listeleyin. Müşteri adı, sipariş ID'si, sipariş tarihi ve ilgili çalışan adı gösterilsin.
 SELECT c.ContactName, o.OrderID, o.OrderDate, e.FirstName,e.LastName
 FROM Orders o
 JOIN Customers c ON o.CustomerID = c.CustomerID
@@ -99,7 +99,7 @@ SELECT COUNT(*) as ProductCount
 FROM Products
 WHERE UnitPrice > 20;
 
--- 19. Verilen Orders ve Customers tablolarını kullanarak 1997 ile 1998 yılları arasında verilen siparişleri müşteri adıyla birlikte listeleyin.
+-- 19. Verilen Orders ve Customers tablolarını kullanarak 2019 ile 2020 yılları arasında verilen siparişleri müşteri adıyla birlikte listeleyin.
 SELECT c.ContactName, o.OrderID, o.OrderDate
 FROM Orders o
 JOIN Customers c ON o.CustomerID = c.CustomerID
