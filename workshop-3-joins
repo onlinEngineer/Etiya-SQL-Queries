@@ -28,7 +28,7 @@ SELECT c.ContactName, o.OrderID, o.OrderDate, e.FirstName,e.LastName
 FROM Orders o
 JOIN Customers c ON o.CustomerID = c.CustomerID
 JOIN Employees e ON o.EmployeeID = e.EmployeeID
-WHERE strftime('%Y', o.OrderDate) = '1998';
+WHERE strftime('%Y', o.OrderDate) = '2015';
 
 -- 7. Verilen Orders ve Customers tablolarını kullanarak müşterileri, verdikleri sipariş sayısına göre gruplandırın. Sadece 5’ten fazla sipariş veren müşterileri listeleyin.
 SELECT c.ContactName, COUNT(o.OrderID) as OrderCount
@@ -103,7 +103,7 @@ WHERE UnitPrice > 20;
 SELECT c.ContactName, o.OrderID, o.OrderDate
 FROM Orders o
 JOIN Customers c ON o.CustomerID = c.CustomerID
-WHERE o.OrderDate BETWEEN strftime('%Y', o.OrderDate) = '1997' AND strftime('%Y', o.OrderDate) = '1998';
+WHERE o.OrderDate BETWEEN strftime('%Y', o.OrderDate) = '2019' AND strftime('%Y', o.OrderDate) = '2020';
 
 -- 20. Verilen Customers ve Orders tablolarını kullanarak hiç sipariş vermeyen müşterileri listeleyin.
 SELECT c.ContactName
