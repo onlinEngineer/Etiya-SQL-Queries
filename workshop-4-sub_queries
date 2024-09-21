@@ -41,8 +41,14 @@ JOIN Orders o ON c.CustomerID = o.CustomerID
 LEFT JOIN Orders o2 ON c.CustomerID = o2.CustomerID AND o.OrderDate < o2.OrderDate
 WHERE o2.OrderID IS NULL;
 
---9. Her Çalışanın Kendi Departmanındaki Ortalama Maaşın Üzerinde Maaş Alıp Almadığını Bulun
---Departman???
+--9. En Çok Sipariş Alan Çalışanı Bulun
+SELECT e.EmployeeID, e.FirstName, e.LastName, COUNT(o.OrderID) AS TotalOrders
+FROM Employees e
+JOIN Orders o ON e.EmployeeID = o.EmployeeID
+GROUP BY e.EmployeeID, e.FirstName, e.LastName
+ORDER BY TotalOrders DESC
+LIMIT 1;
+
 
 
 --10. En Az 10 Ürün Satın Alınan Siparişleri Listeleyin
